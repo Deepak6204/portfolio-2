@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <h1>To-DO List</h1>
+  <div class="main">
+    <div class="add_task">
+      <div class="form">
+        <input required type="text" placeholder="Enter task" id="task-text" />
+        <input required type="number" placeholder="Priority from 1 or 2 or 3" id="priority" />
+        <input required type="date" id="date" />
+        <button class="submit-but" onclick="addTask()">
+          Add Task
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="tasks">
+      <ul class="task_list" id="list">
+      </ul>
+      <div class="no_tasks">
+        <p>No tasks added...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
